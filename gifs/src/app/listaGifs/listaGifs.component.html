@@ -2,10 +2,15 @@
         <h1 class="text-center">Lista de Gifs</h1>
 </div>
 <div class="container">
+    <form class="input-group">
+        <input #filtro (keyup)="submit()" class="form-control" placeholder="filtrar gifs">
+        <button [routerLink]="['/lista-gifs', termo + '+' + input]" class="btn">Enviar</button>
+        <button [routerLink]="['/lista-gifs', termo]" class="btn btn-danger">Limpar Filtro</button>
+        <a class="btn btn-primary" [routerLink]="['/']">Voltar</a>
+    </form>
     <div class="row">
-        <div class="col-md-5" *ngFor="let gif of gifs" >
-            <gif url="{{gif.images.fixed_height.url}}"></gif>
+        <div *ngFor="let gif of gifs" class="col-md-5" >
+            <gif url="{{gif.fixed_height_downsampled_url}}"></gif>
         </div>   
     </div>
-    <a class="btn btn-primary" [routerLink]="['/']">Voltar</a>
 </div>
