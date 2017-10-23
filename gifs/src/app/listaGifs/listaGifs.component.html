@@ -1,3 +1,11 @@
 <div class="jumbotron">
         <h1 class="text-center">Lista de Gifs</h1>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-5" *ngFor="let gif of gifs" >
+            <gif url="{{gif.images.fixed_height.url}}"></gif>
+        </div>   
     </div>
+    <a class="btn btn-primary" [routerLink]="['/']">Voltar</a>
+</div>

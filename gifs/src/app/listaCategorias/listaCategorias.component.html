@@ -5,6 +5,35 @@
 <div class="container">
     <h2 class="text-center">Categorias</h2>
     <grade>
-        <categoria titulo="Cães" foto="./assets/dogs.jpg"></categoria>
+        <a [routerLink]="['/lista-gifs', 'dog']">   
+            <categoria titulo="Dog" foto="./assets/dogs.jpg"></categoria>
+        </a>
+        <a [routerLink]="['/lista-gifs', 'cat']"> 
+            <categoria titulo="Cat" foto="./assets/cat.jpg"></categoria>
+        </a>
+        <a [routerLink]="['/lista-gifs', 'rabbit']"> 
+            <categoria titulo="Rabbit" foto="./assets/rabbit.jpg"></categoria>
+        </a>
+        <a [routerLink]="['/lista-gifs', 'hamster']"> 
+            <categoria titulo="Hamster" foto="./assets/hamster.jpg"></categoria>
+        </a>
+        <a [routerLink]="['/lista-gifs', 'lizard']"> 
+            <categoria titulo="Lizard" foto="./assets/lizard.jpg"></categoria>
+        </a>
+        <a [routerLink]="['/lista-gifs', 'bird']"> 
+            <categoria titulo="Bird" foto="./assets/bird.jpg"></categoria>
+        </a>
+        <a [routerLink]="['/lista-gifs', 'guinea pig']"> 
+            <categoria titulo="Guinea Pig" foto="./assets/guinea.jpg"></categoria>
+        </a>
+        <a [routerLink]="['/lista-gifs', 'ferret']"> 
+            <categoria titulo="Ferret" foto="./assets/ferret.jpg"></categoria>
+        </a>
+        <a [routerLink]="['/lista-gifs', 'turtle']"> 
+            <categoria titulo="Turtle" foto="./assets/turtle.jpg"></categoria>
+        </a>
+        <a [routerLink]="['/lista-gifs', 'fish']"> 
+            <categoria titulo="Fish" foto="./assets/fish.png"></categoria>
+        </a>
     </grade>
 </div>

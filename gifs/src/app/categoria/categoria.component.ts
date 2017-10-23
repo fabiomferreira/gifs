@@ -4,7 +4,7 @@ import { Component, Input } from '@angular/core';
 @Component ({
     moduleId: module.id,
     selector: 'categoria',
-    templateUrl:'./categoria.component.html'
+    templateUrl:'./categoria.component.html'    
 })
 
 export class CategoriaComponent {
