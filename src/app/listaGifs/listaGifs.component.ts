@@ -10,7 +10,7 @@ import { Http } from '@angular/http'
 
 export class ListaGifsComponent {
     gifs : Object[] = [];
-    urlBase = "http://api.giphy.com/v1/gifs/random?tag=";
+    urlBase = "https://api.giphy.com/v1/gifs/random?tag=";
     termo: string;
     key = "O8RhkTXfiSPmSCHosPAnhO70pdnHUiWn";
     @ViewChild('filtro') filtro: ElementRef;
